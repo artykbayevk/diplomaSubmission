@@ -1,0 +1,60 @@
+/* Developed by Nursultan Berkimbayev. 2015 - 2016 years
+   All rights reserved */
+
+/* import pages */
+
+@import url('pages/main.css');
+@import url('pages/group.css');
+@import url('pages/leads.css');
+@import url('pages/contact.css');
+@import url('pages/pagetasks.css');
+@import url('pages/pageanalytics.css');
+@import url('pages/login.css');
+@import url('pages/settings.css');
+
+/* import components */
+
+/* misc */
+@import url('components/intro.css');
+@import url('components/automato-icons.css');
+@import url('components/fonts.css');
+@import url('components/view-animation.css');
+@import url('components/nogroup.css');
+@import url('components/misc.css');
+
+/* atoms */
+@import url('components/input.css');
+@import url('components/wrapper.css');
+@import url('components/filter.css');
+@import url('components/button.css');
+@import url('components/validation.css');
+@import url('components/drag.css');
+@import url('components/select.css');
+@import url('components/pagination.css');
+
+/* molecules */
+@import url('components/history.css');
+@import url('components/alert.css');
+@import url('components/aside.css');
+@import url('components/nav.css');
+@import url('components/header.css');
+@import url('components/modal.css');
+@import url('components/list.css');
+@import url('components/notes.css');
+@import url('components/tasks.css');
+@import url('components/dropdown.css');
+@import url('components/sidebar.css');
+@import url('components/timepicker.css');
+@import url('components/collapse.css');
+@import url('components/timeline.css');
+@import url('components/calendar.css');
+@import url('components/popover.css');
+@import url('components/schedule.css');
+@import url('components/analytics.css');
+
+/* import vendor */
+
+@import url('vendor/reset.css');
+@import url('vendor/animate.css');
+
+/* basic styles */

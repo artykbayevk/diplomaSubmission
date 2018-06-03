@@ -1,0 +1,200 @@
+/* Page main */
+
+.page-main.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-main.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page analytics */
+
+.page-analytics.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-analytics.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page automation */
+
+.page-automation.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-automation.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page group */
+
+.page-group.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-group.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page group */
+
+.page-levels.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-levels.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page group */
+
+.page-groups.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-groups.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page leads */
+
+.page-leads.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-leads.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page leads */
+
+.page-leaddetail.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-leaddetail.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+
+/* Page tasks */
+
+.page-tasks.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-tasks.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page contacts */
+
+.page-contacts.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-contacts.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page settings */
+
+.page-settings.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-settings.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page contacts */
+
+.page-contactdetail.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-contactdetail.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+/* Page task */
+
+.page-taskdetail.ng-leave {
+    display: none;
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
+.page-taskdetail.ng-enter {
+    animation: fadeIn 0.2s ease-in forwards, fadeInColor 1s ease;
+}
+/* Page contacts */
+
+.page-login.ng-leave,
+.page-forgot.ng-leave,
+.page-forgottoken.ng-leave,
+.page-signup.ng-leave,
+.page-token.ng-leave {
+    animation: fadeOut 0.1s ease 0.2s forwards;
+}
+
+.page-login.ng-enter,
+.page-forgot.ng-enter,
+.page-forgottoken.ng-enter,
+.page-signup.ng-enter,
+.page-token.ng-enter  {
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+        .page-login.ng-leave .login-title,
+        .page-forgot.ng-leave .login-title,
+        .page-forgottoken.ng-leave .login-title,
+        .page-signup.ng-leave .login-title,
+        .page-token.ng-leave .login-title {
+            animation: fadeOutDown 0.25s ease forwards;
+        } 
+
+        .page-login.ng-leave .login-subtitle,
+        .page-forgot.ng-leave .login-subtitle,
+        .page-forgottoken.ng-leave .login-subtitle,
+        .page-signup.ng-leave .login-subtitle,
+        .page-token.ng-leave .login-subtitle {
+            animation: fadeOutDown 0.25s ease forwards;
+        } 
+
+        .page-login.ng-leave .login-forms,
+        .page-forgot.ng-leave .login-forms,
+        .page-forgottoken.ng-leave .login-forms,
+        .page-signup.ng-leave .login-forms,
+        .page-token.ng-leave .login-forms {
+            animation: fadeOutDown 0.2s ease forwards;
+        } 
+
+        .page-login.ng-leave .button-login,
+        .page-forgot.ng-leave .button-login,
+        .page-forgottoken.ng-leave .button-login,
+        .page-signup.ng-leave .button-login,
+        .page-token.ng-leave .button-login {
+            animation: fadeOutDown 0.25s ease forwards;
+        } 
+
+        .page-login.ng-leave .login-help,
+        .page-forgot.ng-leave .login-help,
+        .page-forgottoken.ng-leave .login-help,
+        .page-signup.ng-leave .login-help,
+        .page-token.ng-leave .login-help {
+            animation: fadeOutDown 0.2s ease forwards;
+        } 

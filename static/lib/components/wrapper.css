@@ -1,0 +1,39 @@
+.main-wrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 250px;
+}
+
+	.main-wrapper--login {
+		position: absolute;
+		display: block;
+		padding: 60px;
+		min-height: 100vh;
+		z-index: 6;
+		background: url(../../images/cubes2.png) #fff;
+	}
+
+.main {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.main-grey {
+	background: #f9fbfb;
+}
+
+
+/* media */
+
+@media (max-width: 1200px) { 
+	.main-wrapper {
+		padding: 0 0 0 60px;
+	}
+
+	.main-wrapper--login {
+		padding: 60px;
+	}
+}

@@ -1,0 +1,15 @@
+
+.page-scroll ul li.dndDragging {
+	opacity: 0.7;
+	border: 1px solid #2980b9;
+}
+
+.page-scroll ul li.dndDraggingSource {
+  display: none;
+}
+
+.page-scroll ul li.dndPlaceholder {
+	display: block;
+	border: 1px dashed rgba(85, 26, 139, 0.3);
+	background: transparent;
+}

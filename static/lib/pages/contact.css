@@ -1,0 +1,169 @@
+.main-contact {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	min-height: 100vh;
+}
+
+	.main-contact--wrapper {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		min-height: 100vh;
+		padding: 0 0 0 640px;
+		font-size: 0;
+		overflow: hidden;
+	}
+
+	.leads-title {
+		position: relative;
+		display: inline-block;
+		width: auto;
+		height: 20px;
+		line-height: 30px;
+		font-family: 'GothamPro';
+		color: rgba(0,0,0,0.54);
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+
+		.leads-title i {
+			padding: 5px 8px 4px;
+			border-radius: 15px;
+			border: 1px solid rgba(0,0,0,0.12);
+			font-family: 'GothamPro-Medium';
+			font-size: 9px;
+			margin-right: 15px;
+			text-transform: uppercase;
+			color: rgba(0,0,0,0.54);
+		}
+
+	.contact-menu {
+		position: absolute;
+		display: block;
+		right: 40px;
+		color: rgba(0,0,0,0.38);
+		font-size: 23px;
+	}
+
+
+/* contact list */
+
+.main-contact--list {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+	.contact-list--desc {
+		position: relative;
+		display: block;
+		width: 100%;
+		background: #f9fbfb;
+		height: 40px;
+		line-height: 40px;
+		font-size: 0;
+		padding: 0 40px;
+	}
+
+		.contact-list--desc span {
+			display: inline-block;
+			font-family: 'GothamPro-Medium';
+			font-size: 9px;
+			color: rgba(0,0,0,0.38);
+			text-transform: uppercase;
+			text-align: center;
+			width: 17.14%;
+		}
+
+			.contact-list--desc span.lefted {
+				text-align: left;
+			}
+
+			.contact-list--desc span i {
+				margin-left: 7px;
+				color: rgba(0,0,0,0.38);
+				font-size: 10px;
+			}
+
+		.contact-list--desc span.small {
+			width: 8.57%;
+			text-align: right;
+		}
+
+		.contact-list--desc span.left {
+			width: 22.85%;
+			text-align: left;
+		}
+
+	.contact-list {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		font-size: 0;
+		padding: 0 40px;
+	}
+
+		.contact-list:hover {
+			background: #f9fbfb;
+		}
+
+		.contact-list a {
+			display: block;
+			height: 50px;
+			cursor: pointer;
+			border-bottom: 1px solid #f5f5fa;
+		}
+
+		.contact-list span {
+			display: inline-block;
+			font-family: 'GothamPro-Light';
+			font-size: 13px;
+			color: rgba(0,0,0,0.54);
+			text-align: center;
+			width: 17.14%;
+		}
+
+			.contact-list span.lefted {
+				text-align: left;
+			}
+
+			.contact-list span i {
+					position: relative;
+					margin-left: 7px;
+					color: rgba(70,180,207,1);
+					font-size: 10px;
+				}
+
+			.contact-list span.small {
+				width: 8.57%;
+				text-align: right;
+			}
+
+			.contact-list span.left {
+				width: 22.85%;
+				text-align: left;
+			}
+
+/* edit */
+
+.edit-form {
+	padding: 0 0;
+}
+
+/* media */
+
+@media (max-width: 1200px) { 
+
+	.main-contact--wrapper {
+		padding: 0 0 0 350px;
+	}
+
+}

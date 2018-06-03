@@ -1,0 +1,159 @@
+.aside {
+	position: fixed;
+	display: block;
+	width: 250px;
+	height: 100%;
+	background: rgba(47,52,56,1);
+	z-index: 12;
+}
+
+.aside-logo {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 60px;
+	padding: 25px 120px 0 30px;
+}
+
+	.aside-logo img {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+.aside-nav {
+	height: 100%;
+	padding-top: 80px;
+}
+
+/* links */
+
+.aside-nav--list {
+	position: relative;
+	display: block;
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+
+	font-family: 'GothamPro';
+	font-size: 13px;
+	cursor: pointer;
+}
+
+	.aside-nav--list:hover a {
+		color: rgba(255,255,255,0.7);
+		background: rgba(56,62,66,1)
+	}
+
+	.aside-nav--list.active a {
+		color: rgba(255,255,255,1);
+		background: rgba(56,62,66,1)
+	}
+
+		.aside-nav--list.active:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 100%;
+			width: 5px;
+			background: rgba(70,180,207,0.87);
+		}
+
+	.aside-nav--list a {
+		display: block;
+		height: 100%;
+		padding-left: 70px;
+		color: rgba(255,255,255,0.5);
+		text-decoration: none;
+	}
+
+		.aside-nav--link-logout {
+			font-size: 9px;
+			line-height: 20px;
+			color: rgba(255,255,255,0.5);
+		}
+
+	.aside-nav--list-small {
+		bottom: 20px;
+		font-size: 9px;
+		height: 20px;
+		line-height: 20px;
+		color: rgba(255,255,255,0.7);
+	}
+
+		.aside-nav--list-small a {
+			padding-left: 30px;
+		}
+
+		.aside-nav--list-small .aside-nav--icon {
+			display: none;
+			line-height: 24px;
+		}
+
+			.aside-nav--list-small .aside-nav--icon i {
+				font-size: 10px;
+			}
+
+	.aside-nav--list-bottom {
+		position: absolute;
+	}
+
+		.aside-nav--list-bottom.logout {
+			bottom: 40px;
+		}
+
+		.aside-nav--list-bottom.settings {
+			bottom: 80px;
+		}
+
+/* icon */
+
+.aside-nav--icon {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 42px;
+	left: 20px;
+}
+
+	.aside-nav--icon i {
+		font-size: 15px;
+		color: rgba(255,255,255,0.5);
+	}
+
+	.aside-nav--list.active i {
+		color: rgba(255,255,255,0.7);
+	}
+
+/* media */
+
+@media (max-width: 1200px) { 
+	.aside {
+		width: 60px;
+	}
+
+	.aside-nav--list {
+		width: 60px;
+	}
+
+	.aside-nav--list a {
+		padding-left: 0;
+	}
+
+	.aside-nav--link {
+		display: none;
+	}
+
+	.aside-nav--icon {
+		left: 10px;
+	}
+
+	.aside-nav--list-small .aside-nav--icon {
+		display: block;
+	}
+}	

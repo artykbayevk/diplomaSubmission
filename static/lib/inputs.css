@@ -1,0 +1,8 @@
+.inputs{
+	background-color: #EBEBEB;
+	height: 1500px;
+	padding: 20px;
+}
+	.inputs input{
+		background-color: white;
+	}

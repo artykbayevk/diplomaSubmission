@@ -1,0 +1,51 @@
+
+/* Icon font */
+
+@font-face {
+    font-family: 'Automato';
+    src:    url('../../fonts/Automato/automato.eot?tyhn8f');
+    src:    url('../../fonts/Automato/automato.eot?tyhn8f#iefix') format('embedded-opentype'),
+        url('../../fonts/Automato/automato.ttf?tyhn8f') format('truetype'),
+        url('../../fonts/Automato/automato.woff?tyhn8f') format('woff'),
+        url('../../fonts/Automato/automato.svg?tyhn8f#automato') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GothamPro */
+
+@font-face {
+	font-family: 'GothamPro';
+	src: url('../../fonts/GothamPro/GothamPro.eot?') format('eot'),
+	     url('../../fonts/GothamPro/GothamPro.otf')  format('opentype'),
+	     url('../../fonts/GothamPro/GothamPro.woff') format('woff'),
+	     url('../../fonts/GothamPro/GothamPro.ttf')  format('truetype'),
+	     url('../../fonts/GothamPro/GothamPro.svg#GothamPro') format('svg');
+}
+
+@font-face {
+	font-family: 'GothamPro-Medium';
+	src: url('../../fonts/GothamPro-Medium/GothamPro-Medium.eot?') format('eot'),
+	     url('../../fonts/GothamPro-Medium/GothamPro-Medium.otf')  format('opentype'),
+	     url('../../fonts/GothamPro-Medium/GothamPro-Medium.woff') format('woff'),
+	     url('../../fonts/GothamPro-Medium/GothamPro-Medium.ttf')  format('truetype'),
+	     url('../../fonts/GothamPro-Medium/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+}
+
+@font-face {
+	font-family: 'GothamPro-Light';
+	src: url('../../fonts/GothamPro-Light/GothamPro-Light.eot?') format('eot'),
+	     url('../../fonts/GothamPro-Light/GothamPro-Light.otf')  format('opentype'),
+	     url('../../fonts/GothamPro-Light/GothamPro-Light.woff') format('woff'),
+	     url('../../fonts/GothamPro-Light/GothamPro-Light.ttf')  format('truetype'),
+	     url('../../fonts/GothamPro-Light/GothamPro-Light.svg#GothamPro-Light') format('svg');
+}
+
+@font-face {
+	font-family: 'GothamPro-Bold';
+	src: url('../../fonts/GothamPro-Bold/GothamPro-Bold.eot?') format('eot'),
+	     url('../../fonts/GothamPro-Bold/GothamPro-Bold.otf')  format('opentype'),
+	     url('../../fonts/GothamPro-Bold/GothamPro-Bold.woff') format('woff'),
+	     url('../../fonts/GothamPro-Bold/GothamPro-Bold.ttf')  format('truetype'),
+	     url('../../fonts/GothamPro-Bold/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+}

@@ -1,0 +1,49 @@
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	text-rendering: optimizeLegibility;
+	text-rendering: geometricPrecision;
+	font-smooth: always;
+
+	font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+
+	text-rendering: optimizeLegibility;
+}
+
+
+	body::-webkit-scrollbar {
+	    width: 5px;
+	    background: #fff;
+	}
+	 
+	body::-webkit-scrollbar-track {
+	    border-radius: 0;
+	    background: transparent;
+	}
+	 
+	body::-webkit-scrollbar-thumb {
+	    border-radius: 0;
+	    background: #e0e0e0;
+	}
+
+*, 
+*:before, 
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,115 @@
+.schedule-main {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-left: 80px;
+}
+
+	.schedule {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		font-size: 0;
+	}
+
+		.schedule-task {
+			position: relative;
+			display: inline-block;
+			float: left;
+			height: auto;
+			z-index: 5;/*
+			border: 1px solid #000;*/
+		}
+
+		.schedule-inner {
+			position: relative;
+			display: block;
+			width: 100%;
+			min-height: 50px;
+			border: 1px solid #f5f5fa;
+			background: rgba(46,204,113,0.54);
+			cursor: pointer;
+		}
+
+			.schedule-inner.active {
+				z-index: 20;
+				transition: .2s ease;
+				border: 1px solid transparent;
+				background: rgba(46,204,113,0.87);
+
+				box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+					0 1px 5px 0 rgba(0,0,0,0.12),
+					0 3px 1px -2px rgba(0,0,0,0.2);
+			}
+
+			.schedule-inner:before {
+				position: absolute;
+				display: block;
+				width: 2px;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: inherit;
+				content: '';
+			}
+
+			.schedule-timeing {
+				display: block;
+				float: left;
+				width: calc(100% - 50px);
+				height: 20px;
+				padding: 5px 0;
+				line-height: 20px;
+				font-family: 'GothamPro';
+				font-size: 9px;
+				color: rgba(0,0,0,0.38);
+			}
+
+			.schedule-title {
+				display: block;
+				float: left;
+				width: calc(100% - 50px);
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				padding: 0;
+				height: 20px;
+				line-height: 20px;
+				font-family: 'GothamPro';
+				font-size: 13px;
+				color: rgba(0,0,0,0.54);
+			}
+
+			.schedule-done {
+				position: relative;
+				display: block;
+				float: left;
+				width: 40px;
+				height: 40px;
+				padding: 11px 10px;
+			}
+
+				.schedule-done i {
+					display: block;
+					width: 20px;
+					height: 20px;
+					border: 1px solid transparent;
+					border-radius: 50%;
+					background: rgba(255,255,255,0.54);
+					color: rgba(230,126,34,1);
+					line-height: 19px;
+					text-align: center;
+					font-size: 9px;
+				}
+
+					.schedule-done i.done {
+						color: rgba(46,204,113,1);
+					}
+
+
+
+

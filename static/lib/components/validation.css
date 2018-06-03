@@ -1,0 +1,35 @@
+
+	.login-validation {
+		display: block;
+		position: relative;
+		width: 100%;
+		margin-top: 20px;
+		font-family: 'GothamPro-Medium';
+		font-size: 9px;
+		line-height: 13px;
+		color: rgba(231,76,60,0.87);
+		text-transform: uppercase;
+		text-align: center;
+		opacity: 1;
+	}
+
+		.login-validation--settings {
+			text-align: left;
+		}
+
+		.login-validation.ng-hide-remove,
+		.login-validation.ng-hide-remove-active{	
+			animation: fadeInUp 0.25s ease forwards;
+		}
+
+
+		.login-validation.ng-hide-add,
+		.login-validation.ng-hide-add-active{	
+			animation: fadeOutDown 0.25s ease forwards;
+		}
+
+		.login-validation a {
+			color: rgba(70,180,207,0.87);
+			cursor: pointer;
+			text-decoration: none;
+		}

@@ -1,0 +1,233 @@
+.button {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 35px;
+	font-family: 'GothamPro-Medium';
+	font-size: 9px;
+	color: rgba(0,0,0,0.38);
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+	.button-done {
+		background: transparent;
+	}
+
+		.button-done i {
+			border: 1px solid rgba(52,205,157,0.87); 
+			box-shadow: none !important;
+			color: rgba(52,205,157,0.87) !important;
+		}
+
+	.button-settings {
+		display: block;
+		position: relative;
+		width: 100%;
+		text-align: left;
+		outline: none;
+		border: none;
+		margin-top: 40px;
+		background: transparent;
+		padding-left: 0;
+		z-index: 10;
+	}
+
+		.button.button-settings:disabled i {
+			background: #f9fbfb;
+			color: rgba(0,0,0,0.38);
+		}
+
+		.button.button-settings i {
+			position: relative;
+			display: inline-block;
+			top: 2px;
+			margin-left: 10px;
+			background: rgba(52,205,157,0.87);
+		}
+
+	.button-modal {
+		display: block;
+		position: absolute;
+		width: 100%;
+		bottom: 110px;
+		left: 0;
+		padding-left: 0;
+		text-align: center;
+		outline: none;
+		border: none;
+		background: transparent;
+		opacity: 0;
+		z-index: 10;
+		animation: fadeInUp 0.25s ease 0.4s forwards;
+	}
+
+		.button-modal--note {
+			bottom: 50%;
+		}
+
+		.button-modal--relative {
+			position: relative !important;
+			margin-top: 40px;
+			bottom: 0;
+			padding-right: 0;
+			text-align: right;
+		}
+
+		.button-modal--left {
+			bottom: auto !important;
+			width: 50px;
+			left: 50px;
+			margin-top: 40px;
+			text-align: left;
+			z-index: 100;
+		}
+
+			.button-modal--left i {
+				background: rgba(230,126,34,1) !important;
+			}
+
+		.button-modal--lower {
+			bottom: 80px;
+		}
+
+		.button.button-modal:disabled i {
+			background: #f9fbfb;
+			color: rgba(0,0,0,0.38);
+		}
+
+		.button.button-modal i {
+			position: relative;
+			display: inline-block;
+			top: 2px;
+			margin-left: 10px;
+			background: rgba(52,205,157,0.87);
+		}
+
+	.button-login {
+		display: block;
+		position: absolute;
+		width: 195px;
+		left: 50%;
+		margin-left: 0px;
+		bottom: 110px;
+		padding: 0;
+		text-align: right;
+		outline: none;
+		border: none;
+		background: transparent;
+		opacity: 0;
+		transition: .2s ease;
+		animation: fadeInUp 0.25s ease 0.4s forwards;
+	}
+
+		.button-login--right {
+			text-align: left;
+			margin-left: -195px;
+		}
+
+		.button.button-login:disabled i {
+			background: #f9fbfb;
+			color: rgba(0,0,0,0.38);
+		}
+
+		.button.button-login i {
+			position: relative;
+			display: inline-block;
+			top: 2px;
+			margin-left: 10px;
+			background: rgba(52,205,157,0.87);
+		}
+
+			.button.button-login--right i {
+				margin-left: 0;
+				margin-right: 10px;
+				background: rgba(70,180,207,0.87);
+			}
+
+	.button-add--note {
+		position: absolute;
+		display: block;
+		bottom: 50px;
+		right: 40px;
+		padding-left: 0;
+		padding-right: 35px;
+	}
+
+	.button-add--contact {
+		position: relative;
+		bottom: 0;
+		right: 0;
+	}
+
+	.button-donetask {
+		position: relative;
+		bottom: auto;
+		right: auto;
+		float: none !important;
+		color: rgba(0,0,0,0.87);
+	}
+
+	.button-add--task {
+		color: #fff;
+	}
+
+	.button i {
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
+		font-size: 13px;
+		border-radius: 50%;
+		color: rgba(255,255,255,1);
+
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+					0 1px 5px 0 rgba(0,0,0,0.12),
+					0 3px 1px -2px rgba(0,0,0,0.2);
+	}
+
+		.button.button-popover i {
+			box-shadow: none;
+		}
+		
+		.button.button-popover {
+			color: rgba(255,255,255,1);
+		}
+
+		.button-add--note i {
+			right: 0;
+			left: auto;
+			font-size: 10px;
+			line-height: 26px;
+		}
+
+	.button-header {
+		line-height: 60px;
+		float: right;
+	}
+
+		.button-header--margin {
+			margin-left: 30px;
+		}
+
+		.button-header--cross i {
+			background: rgba(230,126,34,1) !important;
+		}
+
+		.button-header i {
+			top: 17px;
+		}
+
+	.button-link i {
+		background: rgba(70,180,207,0.87);
+	}
+
+	.button-add i {
+		background: rgba(52,205,157,0.87);
+	}

@@ -1,0 +1,335 @@
+.list {
+	position: absolute;
+	display: block;
+	width: 50%;
+	height: 100%; 
+	/* vh - no fallback */
+	left: 0;
+	top: 0;
+	padding: 0 0 0 250px;
+	z-index: 2;
+}
+
+	.list-contact {
+		position: relative;
+		display: inline-block;
+		max-width: 61.5%;
+		width: calc(100% - 290px);
+		width: -moz-calc(100% - 290px);
+		width: -webkit-calc(100% - 290px);
+		width: -o-calc(100% - 290px);
+		padding: 0 0 0 0;
+		height: auto;
+		min-height: 100vh;
+		background: #f9fbfb;
+	}
+
+		.list-contact .list-affix:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 140px;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			background: rgba(70,180,207,0.54);
+		}
+
+		.list-contact .list-affix {
+			padding: 160px 40px 60px;
+			background: #f9fbfb;
+			height: auto;
+			min-height: 100vh;
+			overflow-y: visible;
+		}
+
+		.list-detail {
+			width: 640px;
+			padding: 20px 0 0 290px;
+		}
+
+			.list-detail .list-affix {
+				padding: 140px 40px 60px 0;
+			}
+
+			.list-detail .list-affix.ui-scrollpoint .notes-menu--contact {
+				top: 85px;
+			}
+
+			.list-detail .list-affix.ui-scrollpoint {
+				width: 640px;
+				padding: 80px 40px 0 290px;
+			}
+
+	.list-affix {
+		position: relative;
+		display: block;
+		width: 100%;
+		overflow-y: scroll; 
+		padding: 140px 0 0 0;
+		height: 100%;
+		background: #fff;
+	}
+
+	.list-affix::-webkit-scrollbar {
+		display: none;
+	    width: 5px;
+	    background: #fff;
+	}
+	 
+	.list-affix::-webkit-scrollbar-track {
+	    border-radius: 0;
+	    background: transparent;
+	}
+	 
+	.list-affix::-webkit-scrollbar-thumb {
+	    border-radius: 0;
+	    background: #e0e0e0;
+	}
+		
+		.list-affix.ui-scrollpoint {
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 60px 0 0 250px;
+			width: 50%;
+			height: 100%;
+		}
+
+/* list items */
+
+.list-item {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100px;
+	padding: 25px 70px 0 70px;
+	border-bottom: 1px solid #f5f5fa;
+	cursor: pointer;
+}
+	
+	.list-contact .list-item {
+		padding: 25px 40px 0 40px;
+	}
+
+	.list-item a {
+		text-decoration: none;
+	}
+
+	.list-item.active {
+		background: rgba(70,180,207,0.54);
+		transition: .2s ease;
+		border-bottom: 1px solid rgba(70,180,207,0.54);
+	}
+
+	.list-item--icon {
+		position: absolute;
+		display: block;
+		width: 30px;
+		left: 40px;
+		height: 100%;
+	}
+
+		.list-contact .list-item--icon {
+			left: 0;
+		}
+
+
+		.list-item--icon i {
+			font-size: 12px;
+			color: rgba(0,0,0,0.38);
+		}
+
+			.list-item.active .list-item--icon i {
+				color: rgba(255,255,255,0.5);
+			}
+
+		.list-item--i:before {
+			content: '\f006';
+			font-family: 'Automato';
+		}
+
+			.list-item.favorite .list-item--icon i {
+				color: rgba(241,196,15,1);
+			}
+
+			.list-item.favorite .list-item--i:before {
+				content: '\f005';
+				font-family: 'Automato';
+			}
+
+	.list-item--name {
+		display: block;
+		width: 220px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		font-family: 'GothamPro';
+		line-height: 20px;
+		font-size: 13px;
+		color: rgba(0,0,0,0.54);
+	}
+
+		.list-item.active .list-item--name {
+			color: rgba(0,0,0,0.54) !important;
+		}
+
+		.list-contact .list-item--name {
+			width: 190px;
+		}
+
+		.list-item.active .list-item--name {
+			color: rgba(70,180,207,0.87);
+		}
+
+	.list-item--desc {
+		display: block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 220px;
+		font-family: 'GothamPro';
+		line-height: 20px;
+		font-size: 9px;
+		text-transform: uppercase;
+		color: rgba(0,0,0,0.54);
+	}
+
+		.list-item.active .list-item--desc {
+			color: rgba(255,255,255,1) !important;
+		}
+
+		.list-contact .list-item--desc {
+			width: 190px;
+		}
+
+	.list-item--time {
+		display: block;
+		font-family: 'GothamPro';
+		line-height: 35px;
+		font-size: 9px;
+		color: rgba(0,0,0,0.38);
+	}
+
+		.list-item.active .list-item--time {
+			color: rgba(255,255,255,0.7) !important;
+		}
+
+	.list-item--progress {
+		position: absolute;
+		display: block;
+		right: 40px;
+		width: 40px;
+		height: 80px;
+		top: 20px;
+	}
+
+		.list-contact .list-item--progress {
+			right: 0;
+		}
+
+		.list-item--progress span {
+			display: block;
+			margin: 5px 0 8px;
+			width: 40px;
+			height: 40px;
+			border: 1px solid rgba(0,0,0,0.12);
+			border-radius: 50%;
+  			transform: rotate(45deg);
+		}
+
+			.list-item--progress span.main {
+				position: absolute;
+				display: block;
+				margin: 0 0 0;
+				left: -2px;
+				top: -1px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+	  			transform: rotate(0);
+			}
+
+			.list-item--progress span.quarter {
+				border: solid 2px transparent;
+				border-top-color: #e74c3c;
+			}
+
+			.list-item--progress span.half {
+				border: solid 2px transparent;
+				border-top-color: #e67e22;
+				border-right-color: #e67e22;
+			}
+
+			.list-item--progress span.triquarter {
+				border: solid 2px transparent;
+				border-top-color: #f1c40f;
+				border-bottom-color: #f1c40f;
+				border-right-color: #f1c40f;
+			}
+
+			.list-item--progress span.full {
+				border: solid 2px transparent;
+				border-top-color: #2ecc71;
+				border-bottom-color: #2ecc71;
+				border-left-color: #2ecc71;
+				border-right-color: #2ecc71;
+			}
+
+		.list-item--progress i {
+			display: block;
+			font-family: 'GothamPro';
+			font-size: 9px;
+			color: rgba(0,0,0,0.38);
+			text-align: center;
+		}
+
+			.list-item.active .list-item--progress i {
+				color: rgba(255,255,255,0.7) !important;
+			}
+
+/* media */
+
+@media (max-width: 1200px) { 	
+
+	.list {
+		width: calc(50% - 60px);
+		width: -moz-calc(50% - 60px);
+		width: -webkit-calccalc(50% - 60px);
+		width: -o-calc(50% - 60px);
+		padding: 0 0 0 60px;
+	}
+
+		.list-affix.ui-scrollpoint {
+			padding: 60px 0 0 60px;
+			width: calc(50% - 60px);
+			width: -moz-calc(50% - 60px);
+			width: -webkit-calccalc(50% - 60px);
+			width: -o-calc(50% - 60px);
+		}
+
+	.list-detail {
+		max-width: 580px;
+		width: calc(100% - 640px);
+		width: -moz-calc(100% - 640px);
+		width: -webkit-calc(100% - 640px);
+		width: -o-calc(100% - 640px);
+		padding: 20px 35px 0 100px;
+	}
+
+		.list-detail .list-affix.ui-scrollpoint {
+			padding: 60px 40px 60px 100px;
+			width: calc(100% - 675px);
+			width: -moz-calc(100% - 675px);
+			width: -webkit-calc(100% - 675px);
+			width: -o-calc(100% - 675px);
+		}
+
+	.list-contact {
+		width: calc(100% - 290px);
+		width: -moz-calc(100% - 290px);
+		width: -webkit-calc(100% - 290px);
+		width: -o-calc(100% - 290px);
+		padding: 0 0 0 0;
+	}
+}	

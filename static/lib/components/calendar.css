@@ -1,0 +1,123 @@
+.calendar {
+	position: relative;
+	display: block;
+	width: 285px;
+	height: auto;
+	min-height: 260px;
+	padding-left: 40px;
+}
+
+	.calendar-header {
+		position: relative;
+		top: 0;
+		display: block;
+		font-family: 'GothamPro-Medium';
+		font-size: 9px;
+		text-align: center;
+		text-transform: uppercase;
+		color: rgba(0,0,0,0.54);
+		line-height: 40px;
+		height: 40px;
+		border-bottom: 1px solid #f5f5fa;
+	}
+
+		.calendar-header i {
+			position: absolute;
+			display: block;
+			width: 40px;
+			height: 40px;
+			line-height: 41px;
+			font-size: 13px;
+			bottom: 0;
+			cursor: pointer;
+			text-align: center;
+		}
+
+			.calendar-header i.left {
+				left: 0;
+			}
+
+			.calendar-header i.right {
+				right: 0;
+			}
+
+	.calendar-days {
+		position: absolute;
+		display: block;
+		top: 65px;
+		width: 245px;
+		height: 150px;
+	}
+
+		.calendar-daynames {
+			position: relative;
+			display: block;
+			width: 100%;
+		}
+
+	.calendar-dayname {
+		position: relative;
+		display: block;
+		float: left;
+		font-family: 'GothamPro-Medium';
+		font-size: 9px;
+		text-align: center;
+		text-transform: uppercase;
+		color: rgba(70,180,207,0.87);
+		line-height: 25px;
+		width: 35px;
+		height: 25px;
+	}
+
+	.calendar-day {
+		position: relative;
+		display: block;
+		float: left;
+		font-family: 'GothamPro-Medium';
+		font-size: 9px;
+		text-align: center;
+		text-transform: uppercase;
+		color: rgba(0,0,0,0.54);
+		line-height: 20px;
+		width: 35px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+			.calendar-day:hover {
+				background: #f7f7f7;
+			}
+
+		.calendar-day span {
+			display: block;
+			width: 100%;
+		}
+
+		.calendar-tasks {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+
+			.calendar-tasks span {
+				display: inline-block;
+				width: 4px;
+				height: 4px;
+				margin: 0 1px 8px;
+				background: rgba(46,204,113,0.87);
+				border-radius: 50%;
+			}
+
+			.calendar-tasks span.undone {
+				background: rgba(231,76,60,0.87);
+			}
+
+
+		.calendar-day.today {
+			background: #fafafa;
+			border-bottom: 2px solid rgba(70,180,207,0.87);
+		}
+
+		.calendar-day.choosed {
+			background: #f7f7f7;
+		}

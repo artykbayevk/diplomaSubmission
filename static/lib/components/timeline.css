@@ -1,0 +1,63 @@
+.main-tasks--timenow {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background: rgba(70,180,207,0.08);
+	border-bottom: 1px solid rgba(70,180,207,1);
+}
+
+	.main-tasks--timenow-stamp {
+		position: absolute;
+		display: block;
+		width: 40px;
+		height: 20px;
+		text-align: center;
+		font-family: 'GothamPro-Medium';
+		font-size: 9px;
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 20px;
+		background: rgba(70,180,207,0.87);
+		right: 50%;
+		margin-left: -20px;
+		bottom: -10px;
+		z-index: 10;
+	}
+
+		.main-tasks--timenow-stamp i {
+			font-family: 'GothamPro-Bold';
+			text-shadow: 1px 0px 0px #fff;
+			margin: 0 1px;
+			animation: flash 2s normal infinite;
+		}
+
+.task-timeline {
+	position: relative;
+	display: block;
+	width: auto;
+	height: 50px;
+	font-size: 0;
+	border-bottom: 1px solid #f5f5fa;
+}
+
+	.tasks-hour {
+		position: relative;
+		display: inline-block;
+		width: 20px;
+		height: 50px;
+		background: transparent;
+		border-right: 1px solid #f5f5fa;
+		border-bottom: 1px solid #f5f5fa;
+	}
+
+	.tasks-hour.colored {
+		background: rgba(46,204,113,0.38);
+	}
+
+	.tasks-hour.colored.ending {
+		background: rgba(230,126,34,0.38);
+	}
+
+	.tasks-hour.colored.ended {
+		background: rgba(231,76,60,0.38);
+	}

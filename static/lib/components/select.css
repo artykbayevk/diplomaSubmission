@@ -1,0 +1,34 @@
+.select {
+	position: relative;
+	width: 100%;
+	max-width: 390px;
+	text-align: left;
+	font-family: 'GothamPro';
+	font-size: 13px;
+	color: rgba(0,0,0,0.54);
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	background: transparent;
+	transition: .2s ease;
+}
+
+	.select.selected {
+		border-bottom: 1px solid rgba(46,204,113,1); 
+	}
+
+	.select span {
+		display: block;
+		line-height: 25px;
+		cursor: pointer;
+	}
+
+	.select span i {
+		float: right;
+		display: block;
+		line-height: 25px;
+		color: rgba(0,0,0,0.38);
+		font-size: 13px;
+	}
+
+		.select span i.green {
+			color: rgba(46,204,113,1);
+		}

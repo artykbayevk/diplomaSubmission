@@ -1,0 +1,278 @@
+.main-tasks {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	padding: 140px 0 0 250px;
+	top: 0;
+	left: 0;
+	border-top: 1px solid #f5f5fa;
+}
+
+	.main-tasks--wrap {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 0 40px 0 0;
+		font-size: 0;
+		border-top: 1px solid #f5f5fa;
+	}
+
+		.main-tasks--headers {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 40px;
+			border-bottom: 1px solid #f5f5fa;
+		}
+
+			.main-tasks--headers.today {
+				text-align: left;
+				padding-left: 40px;
+			}
+
+			.main-tasks--headers span {
+				font-family: 'GothamPro-Medium';
+				font-size: 9px;
+				text-transform: uppercase;
+				color: rgba(0,0,0,0.38);
+				line-height: 40px;
+			}
+
+				.main-tasks--headers span i {
+					color: rgba(70,180,207,0.54);
+				}
+
+
+/* tasks list */
+
+	.main-tasks--list {
+		position: relative;
+		display: inline-block;
+		width: calc(100% - 770px);
+		width: -webkit-calc(100% - 770px);
+		width: -moz-calc(100% - 770px);
+		width: -o-calc(100% - 770px);
+		height: auto;
+		background: #fff;
+	}
+
+		.main-tasks--list .main-tasks--headers span {
+			display: inline-block;
+			width: 25px;
+		}
+
+		.main-tasks--list .main-tasks--headers span.desc {
+			width: calc(100% - 50px);
+			width: -webkit-calc(100% - 50px);
+			width: -moz-cacl(100% - 50px);
+			width: -o-calc(100% - 50px);
+		}
+
+	.main-tasks--item {
+		position: relative;
+		display: block;
+		height: 50px;
+		width: 100%;
+		border-bottom: 1px solid #f5f5fa;
+	}	
+
+		.main-tasks--item a.desc {
+			position: relative;
+			display: block;
+			padding: 12px 30px 0 0;
+			font-family: 'GothamPro';
+			height: 30px;
+			font-size: 13px;
+			color: rgba(0,0,0,0.54);
+			width: 100%;
+		}
+
+			.main-tasks--item a.desc span {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 30px;      
+				padding-left: 20px;  
+				overflow: hidden;  
+				text-overflow: ellipsis;
+				white-space: nowrap;  
+			}
+
+			.main-tasks--item a.desc i {
+				position: absolute;
+				display: block;
+				left: 0;
+				top: 15px;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				border: 1px solid transparent;
+			}
+
+
+				.main-tasks--item a.desc i.easy {
+					background: rgba(46,204,113,1);
+				}
+
+				.main-tasks--item a.desc i.easy.normal {
+					background: rgba(230,126,34,1);
+				}
+
+				.main-tasks--item a.desc i.hard {
+					background: rgba(231,76,60,1);
+				}
+			
+			.main-tasks--item span.desc  {
+				position: relative;
+				display: block;
+				text-overflow: ellipsis;
+				white-space: nowrap;          
+				overflow: hidden;  
+				height: 20px;
+				font-family: 'GothamPro';
+				padding: 2px 20px 0 0;
+				font-size: 9px;
+				text-transform: uppercase;
+				color: rgba(0,0,0,0.38);
+				width: 100%;
+			}
+
+				.main-tasks--item span.desc i {
+					color: rgba(70,180,207,0.54);
+				}
+
+/* day timeline */
+
+	.main-tasks--timeline {
+		position: relative;
+		display: block;
+		width: calc(100% - 280px);
+		height: 100%;
+		min-height: 100vh;
+		background: #f9fbfb;
+		overflow-y: hidden; 
+		overflow-x: visible; 
+	}
+
+		.main-tasks--times {
+			position: relative;
+			display: block;
+			left: 40px;
+			padding-right: 40px;
+			width: 100%;
+			height: 100%;
+		}
+
+			.main-tasks--times span {
+				position: relative;
+				display: block;
+				width: 100%;
+				text-align: left;
+				font-family: 'GothamPro-Medium';
+				font-size: 9px;
+				text-transform: uppercase;
+				color: rgba(0,0,0,0.38);
+				line-height: 40px;
+				border-bottom: 1px solid #f5f5fa;
+				z-index: 2;
+			}	
+
+				.main-tasks--times span:before {
+					position: absolute;
+					display: block;
+					content: '';
+					display: block;
+					width: calc(100% - 80px);
+					left: 40px;
+					top: 50%;
+					height: 1px;
+					background: #f5f5fa;
+				}
+			
+
+/* tasks list */
+
+	.main-tasks--cal {
+		position: absolute !important;
+		display: block;
+		right: 0;
+		top: 0;
+		width: 320px;
+		height: auto;
+		min-height: 100%;
+		padding-bottom: 40px;
+		background: #fff;
+	}
+
+		.main-tasks--cal.ui-scrollpoint {
+			position: fixed !important;
+			top: 60px;
+			right: 0;
+		}
+
+		.task-sref {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: auto;
+			min-height: 300px;
+			margin: 0 auto;
+			padding: 0 40px;
+		}
+
+			.task-sref--title {
+				display: block;
+				min-height: 60px;
+				padding: 20px 0;
+				font-family: 'GothamPro-Light';
+				color: rgba(0,0,0,0.54);
+				font-size: 21px;
+				line-height: 25px;
+			}
+
+				.task-sref--subtitle {
+					display: block;
+					width: 240px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					font-family: 'GothamPro-Medium';
+					text-transform: uppercase;
+					font-size: 9px;
+				}
+
+					.task-sref--timing {
+						display: block;
+						font-family: 'GothamPro-Medium';
+						text-transform: uppercase;
+						font-size: 9px;
+						line-height: 20px;
+						color: rgba(0,0,0,0.38);
+					}
+
+				.task-sref--subtitle a {
+					color: rgba(70,180,207,0.54);
+					text-decoration: none;
+				}
+
+
+			.task-sref--timeago {
+				display: block;
+				line-height: 20px;
+				padding-top: 10px;
+				font-family: 'GothamPro';
+				font-size: 9px;
+				color: rgba(0,0,0,0.38);
+			}
+/* media */
+
+@media (max-width: 1200px) { 
+
+	.main-tasks {
+		padding: 140px 0 0 60px;
+	}
+
+}

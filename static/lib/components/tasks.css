@@ -1,0 +1,213 @@
+.tasks {
+	position: relative;
+	display: inline-block;
+	width: 290px;
+	min-width: 38.5%;
+	height: auto;
+	min-height: 100vh;
+	padding: 160px 40px 60px;
+	background: rgba(70,180,207,0.54);
+}
+
+	.tasks-title {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 20px;
+		line-height: 30px;
+		font-family: 'GothamPro';
+		color: rgba(255,255,255,1);
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+
+		.tasks-title i {
+			padding: 5px 8px 4px;
+			border-radius: 15px;
+			border: 1px solid rgba(255,255,255,0.7);
+			font-family: 'GothamPro-Medium';
+			font-size: 9px;
+			margin-right: 15px;
+			text-transform: uppercase;
+			color: rgba(255,255,255,1);
+		}
+
+	/* list of tasks */
+
+	.tasks-list {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 40px 0 10px;
+	}
+
+		.tasks-list--desc {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			font-family: 'GothamPro-Medium';
+			font-size: 9px;
+			margin-bottom: 16.6px;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.7);
+			border-bottom: 1px solid rgba(255,255,255,0.38);
+		}
+
+			.task-check {
+				position: relative;
+				display: inline-block;
+				font-family: 'GothamPro-Medium';
+				font-size: 9px;
+				text-transform: uppercase;
+				z-index: 2;
+				width: 24px;
+				height: 24px;
+				line-height: 24px;
+				text-align: center;
+				border: 1px solid #f7f7f7;
+				border-radius: 50%;
+				cursor: pointer;
+				background: #f7f7f7;
+				color: rgba(0,0,0,0.38);
+				transition: .2s ease;
+				box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+							0 1px 5px 0 rgba(0,0,0,0.12),
+							0 3px 1px -2px rgba(0,0,0,0.2);
+			}
+
+				.task-check.done {
+					border: 1px solid rgba(46,204,113,1);
+					color: #fff;
+					background: rgba(46,204,113,1);
+				}
+
+				.task-check.note {
+					border: 1px solid rgba(70,180,207,1);
+					color: #fff;
+					background: rgba(70,180,207,1);
+				}
+
+			.task-date {
+				position: relative;
+				display: block;
+				width: 100%;
+				font-family: 'GothamPro-Medium';
+				font-size: 9px;
+				text-transform: uppercase;
+				z-index: 2;
+				color: rgba(255,255,255,0.50);
+				transition: .2s ease;
+			}
+
+				.task-date.red {
+					color: rgba(231,76,60,1) !important;
+				}
+
+				.task-date.green {
+					color: rgba(46,204,113,1) !important;	
+				}
+
+				.task-date i {
+					line-height: 13px;
+					color: rgba(255,255,255,1);
+				}
+
+			.task-desc {
+				display: block;
+				float: right;
+				font-family: 'GothamPro';
+				font-size: 13px;
+				line-height: 19.3px;
+				width: calc(100% - 40px);
+				color: rgba(255,255,255,1);
+				transition: .2s ease;
+			}
+
+			.task-done {
+				position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				visibility: hidden;
+				opacity: 0;
+				z-index: 10;
+				text-align: center;
+				animation: fadeIn .2s ease;
+			}
+
+				.task-done audio {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				.task-check:hover + .task-done {
+					visibility: visible;
+					opacity: 1;
+					display: block;
+				}
+
+				.task-done:hover {
+					visibility: visible;
+					opacity: 1;
+					display: block;
+				}
+
+
+	.tasks-task {
+		position: relative;
+		display: block;
+		padding: 0 0 16.6px 0;
+	}	
+
+		.tasks-task:last-of-type:before {
+			display: none;
+		}
+
+		.tasks-task:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 1px;
+			min-height: 13px;
+			height: calc(100% - 32px);
+			background: #fff;
+			left: 11px;
+			top: 29px;
+			z-index: 1;
+		}		
+
+			.tasks-task.done:before {
+				background: rgba(46,204,113,1);
+			}		
+
+			.tasks-task.note:before {
+				background: rgba(70,180,207,1);
+			}		
+
+		.task-status {
+			position: absolute;
+			display: block;
+			width: 6px;
+			height: 6px;
+			border: 1px solid #fff;
+			right: 0;
+			top: 23.3px;
+			border-radius: 50%;
+		}
+
+			.task-status.easy {
+				background: rgba(46,204,113,1);
+			}
+
+			.task-status.normal {
+				background: rgba(230,126,34,1);
+			}
+
+			.task-status.hard {
+				background: rgba(231,76,60,1);
+			}

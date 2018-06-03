@@ -1,0 +1,129 @@
+
+.alert {
+    position: fixed;
+    display: block;
+    bottom: 15px;
+    right: 25px;
+    width: auto;
+    padding: 15px 25px 15px 55px;
+    height: auto;
+    font-family: 'GothamPro';
+    font-weight: 400;
+    font-size: 13px;
+    z-index: 10000 !important;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+                    0 1px 5px 0 rgba(0,0,0,0.12),
+                    0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+    .alert-success {
+        background: #f9fbfb;
+        color: #999;
+    }
+
+    .alert-error {
+        background: #f9fbfb;
+        color: #999;
+    }
+
+    .alert-mainerror {
+        background: #f9fbfb;
+        color: #999;
+        z-index: 9999;
+    }
+
+    .alert-black {
+        background: #323232;
+        color: #f7f7f7;
+    }
+
+        .alert-success span,
+        .alert-error span,
+        .alert-mainerror span {
+            position: absolute;
+            left: 0;
+        } 
+
+            .alert-success span i {
+                position: absolute;
+                display: inline-block;
+                left: 25px;
+                top: -2px;
+                font-size: 14px;
+                color: rgba(46,204,113,1);
+            }
+
+            .alert-error span i,
+            .alert-mainerror span i {
+                position: absolute;
+                display: inline-block;
+                left: 25px;
+                top: -2px;
+                font-size: 14px;
+                color: rgba(231,76,60,1);
+            }
+
+.close {
+    display: none;
+}
+
+button.close {
+    display: none;
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+.fade-repeat.ng-enter {
+    -webkit-animation: fadeIn 0.2s;
+    animation: fadeIn 0.2s;
+}
+
+.fadeZoom.ng-enter {
+    -webkit-animation-name: fadeIn, zoomIn;
+    -webkit-animation-duration: 0.6s, 0.2s;
+    -webkit-animation-name: fadeIn, zoomIn;
+    animation-name: fadeIn, zoomIn;
+    -webkit-animation-duration: 0.6s, 0.2s;
+    animation-duration: 0.6s, 0.2s;
+}
+
+.fadeZoomFadeDown.ng-enter {
+    -webkit-animation-name: fadeIn, zoomIn;
+    -webkit-animation-duration: 0.6s, 0.2s;
+    -webkit-animation-name: fadeIn, zoomIn;
+    animation-name: fadeIn, zoomIn;
+    -webkit-animation-duration: 0.6s, 0.2s;
+    animation-duration: 0.6s, 0.2s;
+}
+
+.fadeZoomFadeDown.ng-leave {
+    -webkit-animation: fadeOutDown 0.6s;
+    animation: fadeOutDown 0.6s;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.8, .8, .8);
+        transform: scale3d(.8, .8, .8);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.8, .8, .8);
+        transform: scale3d(.8, .8, .8);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

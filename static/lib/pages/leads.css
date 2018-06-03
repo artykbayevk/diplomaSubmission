@@ -1,0 +1,33 @@
+.main-leads {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	min-height: 100vh;
+}
+
+	.main-list--wrapper {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		min-height: 100vh;
+		padding: 0 0 0 50%;
+		font-size: 0;
+		overflow: hidden;
+	}
+
+/* media */
+
+@media (max-width: 1200px) { 
+
+	.main-list--wrapper {
+		padding: 0 0 0 calc(50% - 60px);
+		padding: 0 0 0 -moz-calc(50% - 60px);
+		padding: 0 0 0 -webkit-calc(50% - 60px);
+		padding: 0 0 0 -o-calc(50% - 60px);
+	}
+
+}

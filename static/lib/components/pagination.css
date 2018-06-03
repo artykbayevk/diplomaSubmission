@@ -1,0 +1,42 @@
+.pagination {
+	display: block;
+	position: relative;
+	margin-top: 50px;
+	height: 40px;
+	width: 100%;
+	padding: 9px 30px;
+	text-align: center;
+}
+
+	.pagination li {
+		display: inline-block;
+	    font-size: 9px;
+	    padding: 0 10px;
+	    line-height: 24px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    font-family: 'GothamPro-Medium';
+	    cursor: pointer;
+	}
+
+	.pagination li.active{
+		background-color: rgba(70,180,207,0.87);
+		color: #fff;
+	}
+
+	.pagination li.active span{
+		color: #fff;
+	}
+
+	.pagination li.disabled span{
+		color: rgba(45,41,41,0.23);
+	}
+
+	.pagination li span {
+	    text-transform: uppercase;
+	    font-family: 'GothamPro-Medium';
+	    font-size: 9px;
+	    color: rgba(0,0,0,0.54);
+	    text-align: center;
+	    width: 17.14%;
+	}

@@ -1,0 +1,77 @@
+.filter {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
+
+	.filter-righted {
+		float: right;
+		padding-top: 5px;
+	}
+
+		.filter-righted .filter-radio {
+			margin-right: 0;
+			margin-left: 15px;
+		}
+
+	.filter input[type='radio'] {
+		display: none;
+	}
+
+	.filter-radio {
+		display: inline-block;
+		padding: 5px 8px 4px;
+		border-radius: 15px;
+		border: 1px solid rgba(0,0,0,0);
+		font-family: 'GothamPro-Medium';
+		font-size: 9px;
+		margin-right: 15px;
+		text-transform: uppercase;
+		color: rgba(0,0,0,0.38);
+		cursor: pointer;
+	}
+
+		.filter-radio:hover {
+			border: 1px solid rgba(0,0,0,0.06);
+		}
+
+		.filter input[type='radio']:checked + .filter-radio {
+			border: 1px solid rgba(0,0,0,0.12);
+		}
+
+/**/
+
+.filter-datepicker {
+	position: relative;
+	display: block;
+	width: 390px;
+	height: auto;
+	cursor: pointer;
+	margin: 10px auto 0;
+}
+
+	.filter-datepicker.margin-bottom {
+		margin: 10px auto 20px;
+	}
+
+	.filter-datepicker--name {
+		display: block;
+		text-align: left;
+		height: 35px;
+		padding-left: 0;
+		font-family: 'GothamPro';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 35px;
+		color: #656565;
+		border-bottom: 1px dashed #eaeaea;
+	}
+
+		.filter-datepicker--name img {
+			display: inline-block;
+			width: 15px;
+			height: auto;
+			margin-bottom: -3px;
+			margin-right: 10px;
+		}
