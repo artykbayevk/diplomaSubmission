@@ -10,7 +10,7 @@ body{
 .header-modified{
     width: 100%;
     font-weight: bold;
-    background-color: rgb(99,190,212);
+    background-color: rgb(251,85,51);
 }
 
 .logo-modified{
@@ -29,7 +29,7 @@ body{
 
 .header-modified{
     width: 100%;
-    background-color: rgb(99,190,212	);
+    background-color: rgb(251,85,51);
 }
 
 .logo-modified{
@@ -208,7 +208,7 @@ body{
 .item:hover{
     color: white;
     cursor: pointer;
-    background-color: #5EBED5;
+    background-color: rgb(251,85,51);
 }
 
 .header-title{
@@ -216,7 +216,7 @@ body{
 }
 
 .header-modified{
-    background-color: rgb(99,190,212  );
+    background-color: rgb(251,85,51);
 }
 
 .logo-modified{
@@ -352,14 +352,14 @@ body{
     color: #2F3438;
 }
 .nav-list a:hover{
-    border-left: 2px solid #5EBED5;
-    color: #5EBED5;
+    border-left: 2px solid rgb(251,85,51);
+    color: rgb(251,85,51);
 }
 
 .footer-modified{
     width: 100%;
     font-weight: bold;
-    background-color: rgb(99,190,212);
+    background-color: rgb(251,85,51);
 }
 
 .updated-select{
